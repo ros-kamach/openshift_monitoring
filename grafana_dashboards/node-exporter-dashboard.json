@@ -2243,7 +2243,6 @@
     "schemaVersion": 14,
     "style": "dark",
     "tags": [
-      "kubernetes",
       "openshift"
     ],
     "templating": {

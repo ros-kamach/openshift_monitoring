@@ -19,6 +19,10 @@ prometheus_yaml="cluster_recources/prometheus.yaml"
 protocol="https://"
 node_exporter_file="grafana_dashboards/node-exporter-dashboard.json"
 cluster_monitoring_for_kubernetes="grafana_dashboards/kubernetes-cluster-monitoring.json"
+kubernetes_apps="grafana_dashboards/kubernetes-apps_rev1.json"
+docker_host="grafana_dashboards/docker_host.json"
+kubernetes_deployent="grafana_dashboards/kubernetes-deployent.json"
+drupal_metrics="grafana_dashboards/drupal_metrics.json"
 #######################################
 ############## Function: ##############
 ####### Check for apply/delete ########
@@ -155,8 +159,29 @@ EOF
         curl --insecure -H "Content-Type: application/json" -u admin:admin "${grafana_host}/api/dashboards/db" -X POST -d "@./${node_exporter_file}"
         printf "\n"
         printf "${RED}################${NC}\n"
+        sleep 10
         # Cluster Monitoring for Kubernetes
         curl --insecure -H "Content-Type: application/json" -u admin:admin "${grafana_host}/api/dashboards/db" -X POST -d "@./${cluster_monitoring_for_kubernetes}"
+        printf "\n"
+        printf "${RED}################${NC}\n"
+        sleep 10
+        # Cluster Monitoring for Kubernetes
+        curl --insecure -H "Content-Type: application/json" -u admin:admin "${grafana_host}/api/dashboards/db" -X POST -d "@./${kubernetes_apps}"
+        printf "\n"
+        printf "${RED}################${NC}\n"
+        sleep 10
+        # Cluster Monitoring for Kubernetes
+        curl --insecure -H "Content-Type: application/json" -u admin:admin "${grafana_host}/api/dashboards/db" -X POST -d "@./${kubernetes_deployent}"
+        printf "\n"
+        printf "${RED}################${NC}\n"
+        sleep 10
+        # Cluster Monitoring for Kubernetes
+        curl --insecure -H "Content-Type: application/json" -u admin:admin "${grafana_host}/api/dashboards/db" -X POST -d "@./${docker_host}"
+        printf "\n"
+        printf "${RED}################${NC}\n"
+        sleep 10
+        # Cluster Monitoring for Kubernetes
+        curl --insecure -H "Content-Type: application/json" -u admin:admin "${grafana_host}/api/dashboards/db" -X POST -d "@./${drupal_metrics}"
         printf "\n"
         printf "${RED}################${NC}\n"
 
