@@ -1,6 +1,6 @@
 # Prometheus and Grafana for OpenShift
 
-This directory contains example components for running either an operational Prometheus setup for your OpenShift cluster, or deploying a standalone secured Prometheus instance for configurating yourself.
+This repository contains components for running either an operational Prometheus and Grafana setup for your OpenShift cluster. 
 
 To deploy, run:
 
@@ -12,3 +12,4 @@ example:
 ```
 $ bash prometheus-grafana.sh openshift-metrics apply
 ```
+![alt text](https://www.drupal.org/files/Thunder_WBM_20160126.png)
