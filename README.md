@@ -3,7 +3,7 @@
 This repository contains components for running either an operational Prometheus and Grafana setup for your OpenShift cluster. 
 
 This Implimentation based on from preconfigurated components in 
-<img src="https://i1.wp.com/blog.openshift.com/wp-content/uploads/redhatopenshift.png?w=1376&ssl=1" alt="Thunder" width="20%"/> **"[openshift](https://github.com/ros-kamach/openshift.git)"**
+<img src="https://i1.wp.com/blog.openshift.com/wp-content/uploads/redhatopenshift.png?w=1376&ssl=1" alt="Thunder" width="10%"/> **"[openshift](https://github.com/ros-kamach/openshift.git)"** with Jenkins and Thunder CMS for OpenShift
 
 To deploy, run:
 
