@@ -1,0 +1,17 @@
+######################
+.git
+.DS_Store?
+.DS_Store
+README.txt
+LICENSE.txt
+.gitattributes
+.dockerignore
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swn
+*.swm
+*.zip
