@@ -12,4 +12,4 @@ example:
 ```
 $ bash prometheus-grafana.sh openshift-metrics apply
 ```
-![alt text](https://www.drupal.org/files/Thunder_WBM_20160126.png)
+![alt text](https://github.com/ros-kamach/openshift_monitoring/raw/master/4.png)
