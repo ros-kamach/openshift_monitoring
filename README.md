@@ -6,7 +6,7 @@ To deploy, run:
 
 syntax:
 ```
-$bash <*.sh> <project name for monitoring> <apply or delete> 
+$ bash <*.sh> <project name for monitoring> <apply or delete> 
 ```
 example:
 ```
