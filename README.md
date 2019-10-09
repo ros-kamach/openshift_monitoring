@@ -9,7 +9,7 @@ To deploy, run:
 
 syntax:
 ```
-$ bash <*.sh> <project name for monitoring> <apply or delete> 
+$ bash prometheus-grafana.sh <project name for monitoring> <apply or delete> 
 ```
 example:
 ```
